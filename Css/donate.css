@@ -1,10 +1,12 @@
 * {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     position: relative;
-    background-image: url('../images/bg1.jpg');
+    background-image: url('img2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; 
@@ -21,6 +23,40 @@ body {
     font-weight: 100;
     color: black;
 }
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    list-style: none;
+    height: 100%;
+    width: 25%;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.navlinks li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.navlinks li:hover {
+   text-decoration-line: underline ;
+   background-color: #BDA576;
+   line-height: 15px;
+}
+
+.links {
+    text-decoration: none ;
+    font-size: 1rem;
+    color: black;
+}*/
+
 
 form {
     opacity: 0;
@@ -64,11 +100,8 @@ h2 {
   background-color: rgba(25, 25, 25, 0.4);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+/* new */
 
 nav{
     margin-top: 2px;
@@ -111,48 +144,4 @@ nav ul li{
     width: 3.7rem;
     border-radius: 50%;
     float: left;
-}
-.form {
-    opacity: 1;
-    height: 88vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2rem 5rem 0 rgb(252 255 255 / 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    transition: 1000ms ease-in;
-    color: white;
-}
-
-
-@media (max-width: 760px){
-    nav ul{
-        position: fixed;
-        top: 80px;
-        left: 0;
-        background-color: black;
-        height: 100vh;
-        width: 100%;
-        display: block;
-        text-align: right;
-    }
-    nav ul li{
-        margin: 40px 0;
-
-    }
-    nav ul li a{
-        font-size: 20px;
-        display: block;
-
-    }
-    nav ul li a:hover{
-        background: none;
-        color: cyan;
-        border-radius: 100%;
-        transition: all 0.3s ease;
-    }
-
 }
